@@ -22,11 +22,6 @@ const b = [4, 5, 6]
 const c = [...a, ...b]
 console.log(c)
 
-// compiler Promise
-Promise.resolve().then(() => { console.log('success') })
-
-// compiler **
-console.log(2 ** 3)
 
 // compiler ...rest
 restParam(1, 2, 3, 4, 5);
@@ -34,7 +29,10 @@ function restParam(p1, p2, ...rest) {
   console.log(rest)
 }
 
-// buble 不能编译 await
-// const sleep = new Promise(resolve => setTimeout(resolve, 1000));
-// await sleep()
-// console.log(123)
+// buble 不能编译 async/await
+// const sleep = new Promise(resolve => setTimeout(() => resolve('aaa'), 1000));
+// async function run() {
+//   const res = await sleep()
+//   console.log(res)
+// }
+// run()

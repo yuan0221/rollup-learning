@@ -1,4 +1,4 @@
-
+import { sleep } from './module/index';
 
 // compiler Class
 class Cls {
@@ -21,12 +21,9 @@ function restParam(p1, p2, ...rest) {
   console.log(rest)
 }
 
-// compiler await
-// const sleep = new Promise(resolve => setTimeout(resolve, 1000));
-// await sleep()
-// console.log(123)
-
-
-// compiler es2023
-const { promise, resolve, reject } = Promise.withResolvers();
-resolve('111')
+// compiler async/await
+async function run() {
+  const res = await sleep()
+  console.log(res)
+}
+run()

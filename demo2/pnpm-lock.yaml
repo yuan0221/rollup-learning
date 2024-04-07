@@ -5,12 +5,14 @@ specifiers:
   '@babel/preset-env': ^7.24.4
   '@rollup/plugin-babel': ^6.0.4
   rollup: ^4.14.0
+  rollup-plugin-serve: ^1.1.1
 
 devDependencies:
   '@babel/core': 7.24.4
   '@babel/preset-env': 7.24.4_@babel+core@7.24.4
   '@rollup/plugin-babel': 6.0.4_zkkoo4rhx4he2mncxssstscncu
   rollup: 4.14.0
+  rollup-plugin-serve: 1.1.1
 
 packages:
 
@@ -1587,12 +1589,23 @@ packages:
       yallist: 3.1.1
     dev: true
 
+  /mime/2.6.0:
+    resolution: {integrity: sha512-USPkMeET31rOMiarsBNIHZKLGgvKc/LrjofAnBlOttf5ajRvqiRA8QsenbcooctK6d6Ts6aqZXBA+XbkKthiQg==}
+    engines: {node: '>=4.0.0'}
+    hasBin: true
+    dev: true
+
   /ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: true
 
   /node-releases/2.0.14:
     resolution: {integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==}
+    dev: true
+
+  /opener/1.5.2:
+    resolution: {integrity: sha512-ur5UIdyw5Y7yEj9wLzhqXiy6GZ3Mwx0yGI+5sMn2r0N0v3cKJvUmFH5yPP+WXh9e0xfyzyJX95D8l088DNFj7A==}
+    hasBin: true
     dev: true
 
   /path-parse/1.0.7:
@@ -1655,6 +1668,13 @@ packages:
       is-core-module: 2.13.1
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
+    dev: true
+
+  /rollup-plugin-serve/1.1.1:
+    resolution: {integrity: sha512-H0VarZRtFR0lfiiC9/P8jzCDvtFf1liOX4oSdIeeYqUCKrmFA7vNiQ0rg2D+TuoP7leaa/LBR8XBts5viF6lnw==}
+    dependencies:
+      mime: 2.6.0
+      opener: 1.5.2
     dev: true
 
   /rollup/4.14.0:

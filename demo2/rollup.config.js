@@ -1,14 +1,25 @@
-import { babel } from '@rollup/plugin-babel';
+const path = require('path');
+const { babel } = require('@rollup/plugin-babel');
+const serve = require('rollup-plugin-serve')
 
-export default {
-  input: 'main.js',
+const resolveFile = function(filePath) {
+  return path.join(__dirname, filePath)
+}
+
+module.exports = {
+  input: resolveFile('src/index.js'),
 	output: {
-		file: 'bundle.js',
-		format: 'es'
+		file: resolveFile('dist/index.js'),
+		format: 'umd',
+    sourcemap: true,
 	},
   plugins: [
     babel({
       presets: ['@babel/preset-env']
     }),
+    serve({
+      port: 3002,
+      contentBase: [resolveFile('dist'), resolveFile('template')]
+    })
   ]
 }

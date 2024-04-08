@@ -1,0 +1,8 @@
+@import './init.scss';
+
+$BG_COLOR: skyblue;
+
+#root {
+  background: $BG_COLOR;
+  display: flex;
+}

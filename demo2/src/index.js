@@ -1,7 +1,8 @@
 import { sleep } from './module/index';
 import $ from 'jquery';
 import pkg from '../package.json'
-import './style/index.css'
+import './style/index.scss'
+import './style/b.less'
 
 // compiler Class
 class Cls {

@@ -33,7 +33,9 @@ module.exports = {
     postcss({
       // extract: path.resolve('dist/css/my-custom-file-name.css'), // 额外提取css
       // minimize: !isDev, // 压缩css
-      plugins: [] // import '../x.css' 的方式将在 head 标签中注入 
+      plugins: [ // import '../x.css' 的方式将在 head 标签中注入 
+        require('autoprefixer'),
+      ] 
     }),
     json(),
     resolve(), // 用于在node_modules 中定位 npm 模块

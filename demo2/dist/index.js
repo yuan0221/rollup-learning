@@ -9382,7 +9382,10 @@
   	"@rollup/plugin-commonjs": "^25.0.7",
   	"@rollup/plugin-json": "^6.1.0",
   	"@rollup/plugin-node-resolve": "^15.2.3",
+  	autoprefixer: "^10.4.19",
   	"cross-env": "^7.0.3",
+  	less: "^4.2.0",
+  	"node-sass": "^9.0.0",
   	postcss: "^8.4.38",
   	rollup: "^4.14.0",
   	"rollup-plugin-delete": "^2.0.0",
@@ -9432,7 +9435,10 @@
     }
   }
 
-  var css_248z = "body {\n  background: #999;\n}";
+  var css_248z$1 = "@import url(./test.css);\ndiv {\n  margin: 0;\n  padding: 0; }\n\n::-moz-placeholder {\n  color: gray; }\n\n::placeholder {\n  color: gray; }\n\n#root {\n  background: skyblue;\n  display: flex; }\n";
+  styleInject(css_248z$1);
+
+  var css_248z = "#root > div:nth-child(2) {\n  background: red;\n}\n";
   styleInject(css_248z);
 
   // compiler Class

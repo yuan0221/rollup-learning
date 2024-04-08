@@ -1,4 +1,7 @@
 import { sleep } from './module/index';
+import $ from 'jquery';
+import pkg from '../package.json'
+import './style/index.css'
 
 // compiler Class
 class Cls {
@@ -27,3 +30,6 @@ async function run() {
   console.log(res)
 }
 run()
+
+
+$('body').append(`<code>${JSON.stringify(pkg)}</code>`)

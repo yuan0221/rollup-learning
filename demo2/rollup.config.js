@@ -46,7 +46,7 @@ module.exports = {
           {
             filter: '**/src/images/*.png',
             url: 'inline',
-            maxSize: 120, // kb
+            maxSize: 120, // kb TODO: css文件中的图片怎么复制到dist目录？html文件中的图片不显示问题？
           },
         ])
       ] 

@@ -3,6 +3,8 @@ import $ from 'jquery';
 import pkg from '../package.json'
 import './style/index.scss'
 import './style/b.less'
+import ai from './images/1.png'
+import icon from './images/2.png'
 
 // compiler Class
 class Cls {
@@ -34,3 +36,12 @@ run()
 
 
 $('body').append(`<code>${JSON.stringify(pkg)}</code>`)
+
+console.log(' 888'.trim())
+
+$('.bg').css({
+  'backgroundImage': `url(${ai})`
+})
+$('.icon').css({
+  'backgroundImage': `url(${icon})`
+})

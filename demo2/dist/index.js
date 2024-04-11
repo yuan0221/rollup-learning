@@ -9012,6 +9012,7 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
   var version = "1.0.0";
   var description = "";
   var main = "index.js";
+  var type = "module";
   var scripts = {
     dev: "cross-env NODE_ENV=development rollup -w -c",
     build: "cross-env NODE_ENV=production rollup -c"
@@ -9049,6 +9050,7 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
     version: version,
     description: description,
     main: main,
+    type: type,
     scripts: scripts,
     keywords: keywords,
     author: author,

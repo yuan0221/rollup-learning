@@ -77,4 +77,55 @@ export default [{
       target: 'index.html',
     }),
   ]
-}]
+},
+{
+  input: resolveFile('src/module/sum.js'),
+  output: {
+    file: resolveFile('dist/sum.cjs.js'),
+    format: 'cjs',
+    sourcemap: false,
+  },
+},
+{
+  input: resolveFile('src/module/sum.js'),
+  output: {
+    file: resolveFile('dist/sum.iife.js'),
+    format: 'iife',
+    sourcemap: false,
+  },
+},
+{
+  input: resolveFile('src/module/sum.js'),
+  output: {
+    file: resolveFile('dist/sum.esm.js'),
+    format: 'esm',
+    sourcemap: false,
+  },
+},
+{
+  input: resolveFile('src/module/sum.js'),
+  output: {
+    file: resolveFile('dist/sum.amd.js'),
+    format: 'amd',
+    sourcemap: false,
+  },
+},
+{
+  input: resolveFile('src/module/sum.js'),
+  output: {
+    file: resolveFile('dist/sum.umd.js'),
+    format: 'umd',
+    sourcemap: false,
+    name: 'name'
+  },
+},
+{
+  input: resolveFile('src/module/sum.js'),
+  output: {
+    file: resolveFile('dist/sum.system.js'),
+    format: 'system',
+    sourcemap: false,
+    name: 'name'
+  },
+},
+]
